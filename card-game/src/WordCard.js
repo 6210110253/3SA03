@@ -45,7 +45,7 @@ export default function WordCard(props){
                 console.log('คำใบ้: ตัวที่สี่เป็นตัวอักษร')
             }
             if(state.attempt === 5 ){
-                console.log('คำใบ้: ยังไม่ถูกอีกใช่ไหม ลองอีกสักครั้งนะ)
+                console.log('คำใบ้: ยังไม่ถูกอีกใช่ไหม ลองอีกสักครั้งนะ')
             }
             if(state.attempt === 6 ){
                 console.log('คำใบ้: ชื่อภาาาไทยเขียนแบบนี้ ---> ฟาตอนียะห์')

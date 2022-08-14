@@ -26,11 +26,32 @@ export default function WordCard(props){
         let guess = state.guess + c
         setState({...state, guess: guess})
 
-        if(guess.length == state.word.length){
+        if(guess.length === state.word.length){
+            if(state.attempt === 1 ){
+                console.log('คำใบ้: ขึ้นต้นด้วย F')
+            }
 
+            if(state.attempt === 2 ){
+                console.log('คำใบ้: ตัวที่สองเป็นสระ')
+            }
 
-            
-            if(guess == state.word){
+            if(state.attempt === 3 ){
+                console.log('คำใบ้: ตัวที่สามเป็นตัวอักษรลำดับที่ 20')
+            }
+            if(state.attempt === 4 ){
+                console.log('คำใบ้: ตัวที่สามเป็นสระ')
+            }
+            if(state.attempt === 5 ){
+                console.log('คำใบ้: ตัวที่สี่เป็นตัวอักษร')
+            }
+            if(state.attempt === 5 ){
+                console.log('คำใบ้: ยังไม่ถูกอีกใช่ไหม ลองอีกสักครั้งนะ)
+            }
+            if(state.attempt === 6 ){
+                console.log('คำใบ้: ชื่อภาาาไทยเขียนแบบนี้ ---> ฟาตอนียะห์')
+            }
+
+            if(guess === state.word){
                 console.log('ถูกต้องแล้วค่ะ ฉันชื่อ Fatoniyah')
                 setState({...state, completed: true})
             } else {

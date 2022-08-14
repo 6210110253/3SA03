@@ -27,11 +27,14 @@ export default function WordCard(props){
         setState({...state, guess: guess})
 
         if(guess.length == state.word.length){
+
+
+            
             if(guess == state.word){
-                console.log('yeah!')
+                console.log('ถูกต้องแล้วค่ะ ฉันชื่อ Fatoniyah')
                 setState({...state, completed: true})
             } else {
-                console.log('reset, next attempt')
+                console.log('ลองอีกครั้ง')
                 setState({...state, guess: '', attempt: state.attempt + 1})
             }
         }

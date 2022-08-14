@@ -9,7 +9,8 @@ function App() {
     <div>
       <Button outline color="success">my name is ... ?</Button>{' '}
       <WordCard value={word}/>
-      <p> Hint : ชื่อของฉันมี 4 พยางค์ </p>
+      <p> คำใบ้ : ชื่อของฉันมี 4 พยางค์ ขึ้นต้นด้วยตัวย F ลงท้ายด้วย H </p>
+      
  </div>
   );
 }
